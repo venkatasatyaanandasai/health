@@ -1,0 +1,129 @@
+.about-section {
+    padding: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+    background: linear-gradient(to right, #ECF2FF, #FBFCFF);
+}
+/* Image */
+.about-image-content {
+    width: 50%;
+    max-width: 100%;
+    text-align: center;
+}
+.about-image1 {
+    width: 80%;
+    height: auto;
+}
+/* Text */
+.about-text-content {
+    width: 50%;
+}
+.about-title {
+    font-family: 'Poppins', sans-serif;
+    font-size: 40px;
+    font-weight: bold;
+}
+.about-title > span {
+    position: relative;
+}
+.about-title span::before {
+    content: '';
+    position: absolute;
+    width: 75%;
+    height: 4px;
+    background-color: #9D2553;
+    border-radius: 8px;
+    left: 0;
+    bottom: -12px;
+}
+.about-description {
+    margin: 32px 0;
+    color: #4d4b4b;
+    font-family: 'Rubik', sans-serif;
+    font-size: 18px;
+    letter-spacing: .7px;
+    line-height: 1.7rem;
+}
+.about-text-title {
+    margin: 0 0 24px 0;
+    color: #4d4b4b;
+    font-family: 'Poppins', sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    letter-spacing: .7px;
+}
+/* Steps */
+.about-text-step {
+    margin: 16px 0;
+}
+.about-text-sTitle {
+    font-family: 'Rubik', sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: .7px;
+}
+.about-text-description {
+    margin: 8px 24px;
+    color: #4d4b4b;
+    font-family: 'Rubik', sans-serif;
+    letter-spacing: .7px;
+    line-height: 1.6rem;
+}
+.fa-icon {
+    color: #9D2553;
+}
+/* Responsive */
+@media screen and (max-width: 1000px) {
+    .about-section {
+        display: block;
+    }
+    .about-image-content {
+        width: 100%;
+        max-width: 100%;
+        margin: 0 0 32px 0;
+    }
+    .about-image1 {
+        width: 100%;
+        height: 100%;
+    }
+    .about-text-content {
+        width: 100%;
+    }
+}
+
+.about-section {
+    padding: 76px clamp(22px, 7vw, 100px);
+    gap: clamp(30px, 6vw, 80px);
+    background: #f5faf9;
+}
+.about-image-content, .about-text-content { width: 50%; }
+.about-image1 {
+    width: min(100%, 520px);
+    border-radius: 24px;
+}
+.about-description {
+    margin: 22px 0;
+    color: #60757b;
+    font-size: 16px;
+    letter-spacing: 0;
+    line-height: 1.75;
+}
+.about-text-title { color: #25464c; font-size: 19px; }
+.about-text-step { margin: 18px 0; }
+.about-text-sTitle { color: #17313b; font-size: 16px; }
+.about-text-description {
+    margin: 7px 0 0 27px;
+    color: #60757b;
+    font-size: 14px;
+    letter-spacing: 0;
+    line-height: 1.65;
+}
+.fa-icon { color: #087f82; }
+@media screen and (max-width: 1000px) {
+    .about-section { padding: 56px 26px; }
+    .about-image-content, .about-text-content { width: 100%; }
+    .about-image-content { margin-bottom: 28px; }
+    .about-image1 { width: min(100%, 560px); }
+}

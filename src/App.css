@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Rubik:wght@400;500;600;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --color-ink: #17313b;
+    --color-muted: #60757b;
+    --color-brand: #087f82;
+    --color-brand-dark: #06696c;
+    --color-brand-soft: #e4f4f1;
+    --color-surface: #ffffff;
+    --color-canvas: #f5faf9;
+    --color-border: #dce9e7;
+    --shadow-card: 0 18px 50px rgba(27, 70, 75, 0.09);
+}
+
+body {
+    color: var(--color-ink);
+    background: var(--color-surface);
+    font-family: 'Rubik', 'Segoe UI', sans-serif;
+}
+
+button,
+input,
+select {
+    font: inherit;
+}
+
+.text-appointment-btn {
+    padding: 14px 19px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    color: #fff;
+    border: 1px solid var(--color-brand);
+    border-radius: 11px;
+    background: var(--color-brand);
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color .2s ease, transform .2s ease;
+}
+
+.text-appointment-btn:hover {
+    color: #fff;
+    border-color: var(--color-brand-dark);
+    background: var(--color-brand-dark);
+    transform: translateY(-1px);
+}
+
+button:focus-visible,
+a:focus-visible,
+input:focus-visible,
+select:focus-visible {
+    outline: 3px solid #61bdb1;
+    outline-offset: 3px;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* Custom Scroll Bar */
+::-webkit-scrollbar {
+    width: 10px;
+}
+::-webkit-scrollbar-track {
+    background-color: #edf5f4;
+}
+::-webkit-scrollbar-thumb {
+    background-color: #74b8b0;
+    border: 2px solid #edf5f4;
+    border-radius: 999px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        scroll-behavior: auto !important;
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+}
